@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(58, 75, 87);
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 3px black;
+
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+input {
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+    background-color: rgb(202, 202, 202);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+button.add {
+    width: 20%;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 17px;
+    transition: 1s;
+}
+
+button.add:hover {
+    height: 115px;
+    width: 19.8%;
+
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 50px;
+    
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 1px 3px 20px rgb(75, 75, 75);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 2%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+
+
+.item.clicado {
+    background-color: rgb(185, 255, 183);
+}
+
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+.item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.item-nome {
+    flex: 55%;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.item-botao {
+    flex: 25%;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 1s;
+}
+
+.mdi-check-circle {
+    color: rgb(83, 182, 26);
+}
